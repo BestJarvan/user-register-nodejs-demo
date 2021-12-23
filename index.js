@@ -95,7 +95,7 @@ http.createServer(function (req, res) {
       }
     });
   } else {
-    res.end("get请求");
+    sendMsg(res, '请使用post请求', 105)
   }
 }).listen(3000, function (err) {
   if (!err) {
